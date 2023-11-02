@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Financial Assistance</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <img src="/assets/visual/logo.png" alt="" class="logo" />
+
+        <ul class="nav-item">
+          <li class="nav-links current"><a href="">HOME</a></li>
+          <li class="nav-links"><a href="/about.html">ABOUT</a></li>
+          <li class="nav-links"><a href="">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- <button id="open">OPEN</button> -->
+      <div class="modal-container" id="modal_container">
+        <div class="modal">
+          <h1>Legally Binding!</h1>
+          <p>
+            This is a legally binding contract between Chantelle Le Roux, and
+            Darryl Le Roux. There will be no entering out of this contract when
+            you close this modal.
+          </p>
+          <p>
+            Know that this was done when Darryl Le Roux was meant to relax from
+            coding, but instead decided to do this to hopefully make you smile.
+          </p>
+          <p>
+            This binding contract is payable on the 25th November 2023, or
+            unless a miracle happens. This would be truly appreciated, as Darryl
+            Le Roux forgot that he had to spend R1980 on a pair of jeans, a top
+            and a belt in order to go to Standard Bank for meetings. He still
+            has clothes that were previously purchased, but alas, they are too
+            small. This is also due to the fact that he has now gone to Standard
+            Bank on Monday's and Friday's when he is meant to be working from
+            home, and has spent an additional R900 on petrol so far - with more
+            meetings from the 10th of November, until Neil decides that they can
+            be done online.
+          </p>
+          <p>So close the modal, and enjoy the little show.</p>
+          <p>PS: You may also click no for a surprise :)</p>
+          <button id="close">CLOSE</button>
+        </div>
+      </div>
+
+      <div class="main">
+        <img src="/assets/visual/cat.png" alt="" />
+        <h1>Darryl Needs your assistance</h1>
+        <h2>Would you be able to loan him R2500?</h2>
+      </div>
+
+      <div class="choice">
+        <button class="yes">
+          <a href="https://www.fnb.co.za" target="_blank">YES</a>
+        </button>
+        <button class="no" id="evil-button">
+          <a onclick="playSound();"> NO</a>
+        </button>
+      </div>
+    </div>
+
+    <audio autoplay>
+      <!-- <source src="/assets/audio/abba.mp3" type="audio/mpeg" /> -->
+    </audio>
+
+    <audio id="audio" src="/assets/audio/sorry.mp3" autoplay="false"></audio>
+
+    <script src="index.js"></script>
+  </body>
+</html>
