@@ -20,3 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   choice.style.display = 'none';
   console.log('DOM fully loaded and parsed');
 });
+
+document
+  .querySelector('confetti-botton')
+  .addEventListener('click', () => confetti());
