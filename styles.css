@@ -58,7 +58,6 @@ body {
 
 .container img {
   max-height: 50vh;
-  border-radius: 10px;
   filter: grayscale(100%) brightness(70%) sepia(70%) hue-rotate(-100deg)
     saturate(300%) contrast(1);
 }
@@ -69,8 +68,8 @@ body {
 }
 
 .main h1 {
-  margin-top: -10px;
-  margin-bottom: 20px;
+  margin-top: -0.625rem;
+  margin-bottom: 1.25rem;
 }
 
 .modal-container {
@@ -96,9 +95,9 @@ body {
 
 .modal {
   background-color: white;
-  width: 600px;
+  width: 37.5rem;
   max-width: 100%;
-  padding: 30px 50px;
+  padding: 1.875rem 3.125rem;
   border-radius: 5px;
   text-align: center;
   justify-content: center;
@@ -116,12 +115,12 @@ button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-size: 14px;
   padding: 10px 25px;
-  width: 200px;
-  height: 40px;
+  width: 12.5rem;
+  height: 2.5rem;
 }
 
 .choice {
-  max-width: 800px;
+  max-width: 50rem;
   display: flex;
   flex-direction: row;
   gap: 3rem;
@@ -132,7 +131,7 @@ button {
 
 .choice .yes,
 .choice button a {
-  width: 200px;
+  width: 12.5rem;
   color: black;
   font-weight: bold;
   font-size: 1rem;
@@ -141,7 +140,7 @@ button {
 }
 
 .choice .no {
-  width: 200px;
+  width: 12.5rem;
   color: black;
   font-weight: bold;
   font-size: 1rem;
@@ -149,6 +148,9 @@ button {
   cursor: pointer;
 }
 
+button .yes a {
+  width: 18.75rem;
+}
 #close {
   background-color: #1dd6ea;
 }
@@ -181,4 +183,68 @@ button {
 
 .number {
   font-size: 5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    max-width: 80%;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    gap: 1rem;
+    padding-left: 5rem;
+  }
+
+  .logo {
+    width: 6.25rem;
+  }
+
+  .nav-links {
+    font-size: 1rem;
+  }
+
+  .main {
+    margin-bottom: 1rem;
+  }
+
+  .choice {
+    max-width: 25rem;
+  }
+
+  .yes,
+  .no {
+    max-width: 6.25rem;
+  }
+
+  .number-container {
+    margin: 6.25rem;
+    max-width: 25rem;
+  }
+
+  .number {
+    font-size: 2rem;
+  }
+
+  .main-about {
+    max-height: 40%;
+  }
+
+  .main-about img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-container {
+    position: absolute;
+  }
+
+  .modal {
+    width: 20rem;
+    height: 40rem;
+    font-size: 12px;
+    gap: 0;
+    line-height: 25px;
+  }
 }
